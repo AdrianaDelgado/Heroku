@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Products</title>
+    <!-- Cargando los estilos de bootstrap-->
+    <link
+        rel="stylesheet"
+        href="vendor/bootstrap/dist/css/bootstrap.min.css">
+
+    <!--Cargando el estilo-->
+    <link
+        rel="stylesheet"
+        href="vendor/bootstrap/dist/css/bootstrap-theme.min.css">
+
+    <!-- Cargar estilos -->
+    <link rel="stylesheet" href="css/site.css">
+    <!-- Cargar estilos de switalert-->
+    <link rel="stylesheet"
+    href="vendor\sweetalert\dist\sweetalert.css">
+</head>
+<body style="background: #D8D8D8">  
+<div class="bs-project">
+    <form 
+    action="/formulario" 
+    method="POST"
+    style="padding-top: 10px; " 
+    class="form-horizontal">
+    <div class="form-group">
+        <label class="control-label col-xs-5">
+                 INGRESE EL REGISTRO DEL PRODUCTO QUE DESEA GUARDAR EN EL STOCK<br>
+            </label>
+        </div>
+            <div class="form-group">
+                <label 
+                     for="inputBarcode" 
+                     class="control-label col-xs-2">
+                    Codigo de Barras
+                </label>
+            <div class="col-xs-5">
+                 <input
+                    required
+                    class="form-control"
+                    type="number"
+                    name="Barcode"
+                    id="inputBarcode"
+                    placeholder="Codigo"
+                    maxlength="8"/> 
+             </div>
+        </div>
+<!-- -->
+            <div class="form-group">
+                <label 
+                     for="inputProduct" 
+                     class="control-label col-xs-2">
+                     Nombre del Producto
+                </label>
+            <div class="col-xs-5">
+                 <input
+                    required
+                    class="form-control"
+                    type="text"
+                    name="Product"
+                    id="inputProduct"
+                    placeholder="Nombre Producto">
+             </div>
+        </div>
+<!-- -->
+            <div class="form-group">
+                <label 
+                     for="inputBrand" 
+                     class="control-label col-xs-2">
+                     Marca
+                </label>
+            <div class="col-xs-5">
+                 <input
+                    required
+                    class="form-control"
+                    type="text"
+                    name="Brand"
+                    id="inputBrand"
+                    placeholder="Marca">
+             </div>
+        </div>
+<!-- -->
+            <div class="form-group">
+                <label 
+                     for="inputQuantity" 
+                     class="control-label col-xs-2">
+                     Cantidad
+                </label>
+            <div class="col-xs-5">
+                 <input
+                    required
+                    class="form-control"
+                    type="number"
+                    name="Quantity"
+                    id="inputQuantity"
+                    placeholder="Cantidad de Productos">
+             </div>
+        </div>
+<!-- -->
+            <div class="form-group">
+                <label 
+                     for="inputPacking" 
+                     class="control-label col-xs-2">
+                     Empaque
+                </label>
+            <div class="col-xs-5">
+                 <input
+                    required
+                    class="form-control"
+                    type="text"
+                    name="Packing"
+                    id="inputPacking"
+                    placeholder="Tipo de Empaque">
+             </div>
+        </div>
+<!-- -->
+            <div class="form-group">
+                <label 
+                     for="inputWarranty" 
+                     class="control-label col-xs-2">
+                     Garantia
+                </label>
+            <div class="col-xs-5">
+                 <input
+                    required
+                    class="form-control"
+                    type="number"
+                    name="Warranty"
+                    id="inputWarranty"
+                    placeholder="Años de Garantia">
+             </div>
+        </div>
+<!-- -->
+            <div class="form-group">
+                <label 
+                     for="inputUnitCost" 
+                     class="control-label col-xs-2">
+                     Costo Unitario
+                </label>
+            <div class="col-xs-5">
+                 <input
+                    required
+                    class="form-control"
+                    type="number"
+                    name="UnitCost"
+                    id="inputUnitCost"
+                    placeholder="Costo Unitario">
+             </div>
+        </div>
+<!-- -->
+            <div class="form-group">
+                <label 
+                     for="inputCostSale" 
+                     class="control-label col-xs-2">
+                     Costo de Venta
+                </label>
+            <div class="col-xs-5">
+                 <input
+                    required
+                    class="form-control"
+                    type="number"
+                    name="CostSale"
+                    id="inputCostSale"
+                    placeholder="Costo de venta">
+             </div>
+        </div>
+        <!-- Seccion de envio -->
+        <div class="form-group">
+            <div class="col-xs-offset-2 col-xs-10">
+                <input
+                     type="submit"
+                     class="btn btn-primary"
+                     value="ENVIAR">
+            </div>
+        </div>
+    </form>
+</div>
+
+  <img class="imagen" src="css/stock.jpg"/>
+ <!--Cargando a jquery-->
+    <script 
+        src="vendor/jquery/dist/jquery.min.js">
+    </script>
+    <!--Cargando boostrapt-->
+    <script 
+        src="vendor/bootstrap/dist/js/bootstrap.min.js">
+    </script>
+    <!-- Cargar scripts  de sweetalert-->
+    <script 
+        src="vendor/sweetalert/dist/sweetalert.min.js">
+    </script>
+    <!-- Cargar scripts -->
+    <script src='js/site.js'></script>
+</body>
+</html>
